@@ -6,12 +6,7 @@ const { getGoals, getGoalById, createGoal, updateGoal, deleteGoal }  = require('
 
 router.route('/').get(getGoals).post(createGoal)
 router.route('/:id').get(getGoalById).put(updateGoal).delete(deleteGoal)
-// router.get('/', getGoals);
-// router.get('/:id', getGoalById);
-// router.post('/', createGoal)
-// router.put('/:id', updateGoal);
 
-// router.delete('/:id', deleteGoal)
 
 
 

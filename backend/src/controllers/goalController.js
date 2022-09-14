@@ -8,7 +8,7 @@ const  Goal   =  require('../models/goalModel');
 // @desc Get all goals
 // @route GET/api/goals
 // @access private
-const getGoals = asyncHandler (async (req, res)=>{
+const getGoals = asyncHandler ( async ( req, res )=>{
     
     const goals = await Goal.find()
     if(!goals){
